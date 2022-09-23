@@ -25,7 +25,7 @@ exports.findAll = async (req, res, next) => {
     return res.send(contacts);
 };
 
-exports.findOne = async(req, res, next) => {
+exports.findOne = async (req, res, next) => {
     try {
         const contactService = new ContactService();
         const contact = await contactService.findById(req.params.id);
